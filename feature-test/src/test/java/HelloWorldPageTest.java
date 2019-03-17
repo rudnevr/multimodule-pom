@@ -13,7 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 //@FluentConfiguration(screenshotPath = "target/screenshots", screenshotMode = ConfigurationProperties.TriggerMode.AUTOMATIC_ON_FAIL, capabilities = "{\"chromeOptions\": {\"args\": [\"disable-gpu\"]}}")
 @FluentConfiguration(screenshotPath = "target/screenshots", screenshotMode = ConfigurationProperties.TriggerMode.AUTOMATIC_ON_FAIL, capabilities = "{\"chromeOptions\": {\"args\": [\"headless\",\"disable-gpu\"]}}")
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = io.cognizant.hmh.asdf.HelloWorld.class, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
+@SpringBootTest(classes = HelloWorld.class, webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class HelloWorldPageTest extends FluentTest {
     @LocalServerPort
     private int port;
